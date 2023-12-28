@@ -3,11 +3,11 @@ const result = document.querySelector("#result");
 const displayCurrentPlayer = document.querySelector("#current-player");
 let currentPlayer = 1;
 
-let clickIt;
+let onClickIt;
 for (let i = 0; i < squares.length; i++) {
   squares[i].addEventListener(
     "click",
-    (clickIt = () => {
+    (onClickIt = () => {
       alert("You have clicked square " + i);
     })
   );
